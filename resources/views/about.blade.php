@@ -1,42 +1,10 @@
-<!DOCTYPE html>
-<html lang="en" class="h-full">
+@extends('layouts.app')
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    @vite('resources/css/app.css')
-    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
-    <link rel="shortcut icon" href="/img/positron.png">
-    <link href="https://fonts.googleapis.com/css2?family=PT+One&display=swap" rel="stylesheet">
-    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-    <title>Positron | About</title>
-</head>
+@section('content')
 
-<body class="h-full font-pt-one">
-    <div class="min-h-full">
-        <nav class="bg-gradient-to-r from-purple-500 to-violet-500" x-data="{ isOpen: false }">
-            <div class="px-4 sm:px-6 lg:px-8">
-                <div class="flex h-20 items-center justify-between">
-                    <div class="flex items-center">
-                        <div class="flex-shrink-0">
-                            <img class="h-15 w-20" src="/img/positron.png" alt="">
-                        </div>
-                        <div class="hidden md:block">
-                            <div class="ml-10 flex items-baseline space-x-4">
-                                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                                <a href="#"
-                                    class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Home</a>
-                                <a href="#"
-                                    class="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white"
-                                    aria-current="page">About</a>
-                                <a href="#"
-                                    class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Group</a>
-                                <a href="#"
-                                    class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Task</a>
-                            </div>
-                        </div>
-                    </div>
+
+                        
+                   
                     <div class="hidden md:block">
                         <div class="ml-4 flex items-center md:ml-6">
                             <button type="button" @click="isOpen = !isOpen"
@@ -312,5 +280,9 @@
             </div>
         </main>
 </body>
+@endsection
 
-</html>
+
+
+
+
